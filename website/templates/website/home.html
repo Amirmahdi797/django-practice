@@ -1,0 +1,28 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}صفحه اصلی{% endblock %}
+
+{% block content %}
+<div class="home-container">
+    <h1>به وبسایت آموزشی من خوش آمدید!</h1>
+    <p>این پروژه تمرینی جنگو است و در حال یادگیری هستیم.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>ویژگی ۱</h3>
+            <p>توضیح کوتاه درباره ویژگی ۱</p>
+        </div>
+        <div class="card">
+            <h3>ویژگی ۲</h3>
+            <p>توضیح کوتاه درباره ویژگی ۲</p>
+        </div>
+        <div class="card">
+            <h3>ویژگی ۳</h3>
+            <p>توضیح کوتاه درباره ویژگی ۳</p>
+        </div>
+    </div>
+
+    <p>برای اطلاعات بیشتر به صفحات <a href="{% url 'about' %}">About</a> و <a href="{% url 'contact' %}">Contact</a> مراجعه کنید.</p>
+</div>
+{% endblock %}
